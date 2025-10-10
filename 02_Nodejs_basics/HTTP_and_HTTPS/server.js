@@ -1,3 +1,5 @@
+
+// basic protocol are preinstalled in the os like http , https , ftp etc
 const http=require('http')
 
 
