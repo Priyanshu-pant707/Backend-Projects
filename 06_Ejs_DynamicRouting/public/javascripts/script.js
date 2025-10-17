@@ -1,0 +1,1 @@
+alert("welcome to dynamic routes topic section")

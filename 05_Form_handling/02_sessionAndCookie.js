@@ -4,6 +4,7 @@
 
 // session  and cookie 
 
+const { error } = require('console');
 const expres = require('express');
 
 const app= express();
@@ -23,6 +24,10 @@ app.get('/', function (req, res) {
 
 app.get('/about', function (req, res) {
     res.send("hello from the /about route");
+})
+
+app.get('/profile',function(req,res){
+    res.send("Not implemented");
 })
 
 app.listen(3000);
