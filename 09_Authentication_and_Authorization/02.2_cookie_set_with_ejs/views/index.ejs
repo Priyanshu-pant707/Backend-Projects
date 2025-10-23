@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="main w-full h-full bg-zinc-900 text-white p-5">
+    <div class="mb-5 flex gap-5">
+      <a  class="text-blue-500 hover:text-blue-600 text-sm" href="/">Back to home</a>
+    <a  class="text-blue-500 hover:text-blue-600 text-sm" href="/show">Show Cookies</a>
+  </div>
+    <h1 class="text-center text-5xl font-black"> Set Cookie </h1>
+
+    <form class="flex gap-5 p-10 mt-5" action="/" method="post">
+<label class="tet-2xl font-medium" for="name">Name : </label>
+<input class="bg-gray-500 outline-none rounded-xl p-3 text-yellow-500" type="text" name="name" placeholder="enter name">
+
+<label class="tet-2xl font-medium" for="cookie">cookie : </label>
+<input class="bg-gray-500 outline-none rounded-xl p-3 text-yellow-500"  type="text" name="cookie" placeholder="Enter the cookie value">
+
+<input class="bg-blue-500 rounded-xl px-5 py-2" type="submit" value="set cookie">
+  </div>
+</body>
+</html>
