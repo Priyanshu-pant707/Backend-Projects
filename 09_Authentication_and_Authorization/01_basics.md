@@ -25,4 +25,3 @@
 ## authorization examples
  - role based access controls (RBAC)
  - fine graned access control
- - 
