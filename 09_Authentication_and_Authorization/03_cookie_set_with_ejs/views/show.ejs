@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="main w-full h-full bg-zinc-900 text-white p-5">
+  <div class="mb-5 flex gap-5">
+      <a  class="text-blue-500 hover:text-blue-600 text-sm" href="/">Back to home</a>
+    <a  class="text-blue-500 hover:text-blue-600 text-sm" href="/setCookie">Set cookie</a>
+  </div>
+    <h1 class="text-center text-5xl font-black"> Cookie Avaliables </h1>
+
+
+<div class="container bg-zinc-600 rounded-xl w-[80%] mt-10 m-auto px-5 py-2">
+    <h1 class="text-black text-3xl">All Cookies:</h1>
+
+<% if (cookie && Object.keys(cookie).length > 0) { %>
+    <ul>
+        <% for (let key in cookie) { %>
+            <div class="flex gap-10 items-center justify-between mb-2">
+                <div>
+                    <li class="hover:text-blue-500">
+                        <span class="text-yellow-500"><%= key %></span> : <%= cookie[key] %>
+                    </li>
+                </div>
+                <div>
+                    <a href="/clearCookie/<%= key %>" class="text-sm text-red-500">Delete Cookie</a>
+                </div>
+            </div>
+        <% } %>
+    </ul>
+<% } else { %>
+    <h1 class="text-red-500 text-sm mt-5">No cookies available ...</h1>
+<% } %>
+
+
+</div>
+
+  </div>
+</body>
+</html>

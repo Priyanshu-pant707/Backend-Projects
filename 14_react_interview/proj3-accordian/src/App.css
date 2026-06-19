@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.wrapper h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.heading {
+  padding: 15px 20px;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content {
+  padding: 15px 20px;
+  background: #f8f9fa;
+}
+
+.content p {
+  line-height: 1.6;
+}
